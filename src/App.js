@@ -4,6 +4,7 @@ import './App.css';
 import { withAuthenticator } from 'aws-amplify-react'
 import Amplify, { Auth } from 'aws-amplify';
 import aws_exports from './aws-exports';
+import { API } from 'aws-amplify';
 Amplify.configure(aws_exports);
 
 class App extends Component {
@@ -13,16 +14,8 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            APAC DEVCON - DeepComposer Got Talent  
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     );
