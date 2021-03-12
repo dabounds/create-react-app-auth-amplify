@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/account",
+            "lambdaFunction": "accountFunction",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/account"
+        }
+    ],
+    "resourceName": "formaccount",
+    "apiName": "formaccount",
+    "functionArns": [
+        {
+            "lambdaFunction": "accountFunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-authcra-devw-151111-authRole",
+        "unAuthRoleName": "amplify-authcra-devw-151111-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "accountFunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
