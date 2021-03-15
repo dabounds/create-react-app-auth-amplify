@@ -33,7 +33,7 @@ export default class Form extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>Alias:</label>
+          <label>Alias: </label>
           <input
             type="text"
             name="alias"
@@ -41,7 +41,7 @@ export default class Form extends Component {
             value={this.state.alias}
           />
 
-          <button type="submit">Send</button>
+          <button type="submit">Submit</button>
         </form>
       </div>
     );
