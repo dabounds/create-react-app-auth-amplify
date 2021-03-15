@@ -13,6 +13,8 @@ class App extends Component {
     return (
       <div>
         <h1>Amazon Alias (without @):</h1>
+        <p>Account Generator for APAC DeepComposer's Got Talent</p>
+        <p>Contact: @<a href = "https://phonetool.amazon.com/users/dabounds">dabounds</a></p>
         <Form />
       </div>
     );
