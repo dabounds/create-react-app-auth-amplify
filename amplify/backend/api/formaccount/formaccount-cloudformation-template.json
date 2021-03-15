@@ -90,7 +90,7 @@
             ],
             "paths": {
               
-              "/account": {
+              "/account/{alias}": {
                 "options": {
                   "consumes": [
                     "application/json"
@@ -189,7 +189,7 @@
                   }
                 }
               },
-              "/account/{proxy+}": {
+              "/account/{alias}/{proxy+}": {
                 "options": {
                   "consumes": [
                     "application/json"
@@ -367,7 +367,7 @@
         
         
         
-      "DeploymentAPIGWformaccount": {
+      "DeploymentAPIGWformaccount6ad28cd3": {
         "Type": "AWS::ApiGateway::Deployment",
         "Properties": {
           "Description": "The Development stage deployment of your API.",

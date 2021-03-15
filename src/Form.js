@@ -5,8 +5,7 @@ export default class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      message: '',
+      alias: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -14,7 +13,7 @@ export default class Form extends Component {
 
   handleChange(event) {
     const inputValue = event.target.value;
-    const stateField = event.target.name;
+    const stateField = event.target.alias;
     this.setState({
       [stateField]: inputValue,
     });

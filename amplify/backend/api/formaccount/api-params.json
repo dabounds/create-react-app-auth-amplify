@@ -1,12 +1,12 @@
 {
     "paths": [
         {
-            "name": "/account",
+            "name": "/account/{alias}",
             "lambdaFunction": "accountFunction",
             "privacy": {
                 "open": true
             },
-            "policyResourceName": "/account"
+            "policyResourceName": "/account/*"
         }
     ],
     "resourceName": "formaccount",
@@ -31,5 +31,6 @@
                 "Arn"
             ]
         }
-    ]
+    ],
+    "uuid": "6ad28cd3"
 }
